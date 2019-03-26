@@ -1,0 +1,24 @@
+list ：
+num.insert( 1 , "hdjasd")  # 插入的位置 ， 对象
+num.expend(["1456" , 256]) # 从末尾插入一个列表（list）/// 也就是说传入的对象是一个list
+num.append("dhakjdha")     # 从末尾插入一个成员对象   /// 传入参数为一个成员对象
+del num[1] # 删除列表中的一个元素， 1 表示num中的下标位置
+del num    # 删除这个list
+len(num)   #返回这个list的长度（有多少个成员）
+num.remove("gdjahsdjha")  #删除这个list中的一个对象，前提是这个对象在ilst中 // 也可以这样子用： num.remove(num[4])
+num.pop()  # 删除list中末尾的一个成员，并将这个成员打印出来
+num[1:10]  # 选定这个list中的1到10的范围
+arr = num  # 这个相当于指针 ， 一旦num改变，arr也会改变
+arr = num[:] # 这个为拷贝num列表，num改变，arr不会变
+num.index("123" , 1 , maxn) # index函数表示查找一个list中，“123”出现的位置的下标 ， 1 ， maxn 表示范围，当然，不写就默认为查找全部
+num.count("123") # 表示“123” 在list中出现的次数
+num.reverse()   # 使得list中的成员位置翻转 （第一个数的位置为 1 ， 调用后变为倒数第一）
+num.sort()  # 排序函数 默认从小到大
+num.sort(reverse = true ) # 从大到小排序
+
+元组：
+在一个原有的元组上加上一个新的成员：
+例如：
+num = ("jia","hsdj","hdjask","hdjak","dhau")
+num = num[:2] + ("eee",) + num[2:]
+此时 ： num = ("jia","hsdj",“eee” ,"hdjask","hdjak","dhau")

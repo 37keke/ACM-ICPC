@@ -1,0 +1,35 @@
+关于图论的一些概念
+
+1、图的分类：有向图（Directed Graph）、无向图（Undirected Graph）；
+                         无权图（Unweighted Graph），加权图（Weighted Graph）/网络（NetWork）；
+2、数据结构讨论的是简单图，不讨论多重图、带自身环的图；
+          多重图：图中的两个顶点之间有重复的边；
+          自身环（Self Loop）：起点和终点相同的边名，如 edge(v1,v1)；
+3、完全图（Complete Graph）：图的边数达到最大值，无向图为n*(n-1)/2，有向图为n*(n-1)；
+
+4、邻接顶点（Adjacent Vertex）：相邻的两个顶点；
+      邻居（neighbor）：相邻的两个顶点或边；
+      相邻（adjacent）：两个顶点被同一条边连接，或两条边连接到同一个顶点，称其为连接的；
+
+5、度（Degree）：与某个顶点相关联的边数；
+      孤立点：度为0的顶点；
+      悬挂点（Pendant Node）：度为1的顶点；
+     在有向图中：以顶点v为终点的边数为v的入度（inDegree），以v为起点的边数为v的出度（outDegree）；
+     
+6、子图（Subgraph）：某个图的其中一部分；
+7、路径（Path）：一个顶点到另一个顶点的途径的顶点序列；
+     简单路径（Simple Path）：路径上个点不重复；
+     回路（Cycle Path）/环（Loop）：起点和终点相同且长度大于1的简单路径；
+     路径长度（Path Length）：无权图中指该路径上的边数，加权图中指该路径上各边权重之和；
+     有向图中，如果存在一个顶点v，从v开始有路径可以到达图中的其他所有顶点，则该图为有根的图，v为根；
+
+8、连通：在一个图中，从顶点v1到v2存在路径，则v1、v2是连通的；
+     连通图（Connected Graph）：一个图中任意一对顶点都是连通的；
+     连通分量（Connected Component）：非连通图中的极大连通子图；
+     强连通图（Strongly Connected Graph）：在有向图中，每一对顶点v1，v2，存在v1到v2的路径，也存在v2到v1的路径；
+     强连通分量（Strongly Connected Component）：非强连通图中的极大连通子图；
+---------------------
+作者：Al_assad
+来源：CSDN
+原文：https://blog.csdn.net/Al_assad/article/details/75153853
+版权声明：本文为博主原创文章，转载请附上博文链接！
